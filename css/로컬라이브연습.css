@@ -1,0 +1,181 @@
+@charset "utf-8";
+* {
+    margin: 0; padding: 0;
+}
+li {
+    list-style: none;/* 블릿 없애기 */
+}
+a {
+    text-decoration: none;/* 밑줄 없애기 */
+    color: inherit;
+}
+header {
+    width: 1440px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div {
+    margin-top: 32px;
+}
+header nav ul li {
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 20px;
+}
+header .A ul li {
+    font-size: 20px;
+}
+header .A ul li:nth-child(2) {
+    margin: 0 35px;
+}
+
+
+main img {
+    width: 100%; height: 100%;
+    object-fit: cover;/* object-fit은 <img> <video> 태그의 이미지 조절을 할 때 사용*/
+        /* 가로값, 세로값을 정하기 */
+        /* cover은 사이즈에 맞게 이미지가 잘라진다. */
+        /* contain은 이미지를 포함하는 개념으로 여백이 생길 수 있다 */
+}
+main .D {
+    padding: 120px 0;
+}
+main .D .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+main .D .title h3 {
+    font-size: 40px;
+}
+main .D .title p {
+    color: #797979;
+    margin-top: 20px;
+}
+main .D .list {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .D .list .item {
+    width: 342px;
+}
+main .D .list .item figure {
+    width: 342px; height: 420px;
+    border-radius: 10px;
+    overflow: hidden;/* 벗어난 자식들 숨김처리 */
+    /* <p>태그가 안보이게 됨 */
+    position: relative;
+}
+main .D .list .item figure p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px; height: 30px;
+    background-color: #068e81;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 10px 0;
+    text-align: center;
+    line-height: 30px;
+}
+main .D .list .item div ul li{
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 25px 0 20px 0;
+}
+main .D .list .item div h4 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 20px 0 35px;
+    word-break: keep-all;
+    height: 52px;
+}
+main .D .list .item div strong {
+    font-size: 22px;
+}
+main .D .list .item div strong span {
+    font-size: 16px;
+    color: #797979;
+    margin-left: 20px;
+    text-decoration: line-through;/* 취소선 */
+}
+
+main .E {
+    background-color: #f0f0f0;
+    padding: 120px 0;
+}
+main .E .title {
+    text-align: left;
+    width: 1440px;
+    margin: 0 auto;
+}
+main .E .title h3 {
+    font-size: 40px;
+}
+main .E .title p {
+    color: #797979;
+    margin: 20px 0 40px 0;
+}
+main .E .list {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .E .list .item img {
+    height: 337px;
+    display: block; 
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+main .E .list .item div {
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 0;
+    text-align: center;
+}
+main .E .list .item div h4 {
+    font-size: 20px;
+}
+main .E .list .item div p {
+    display: block;
+    color: #797979;
+    text-decoration: line-through;
+    margin: 30px 0 10px;
+}
+main .E .list .item div strong {
+    font-size: 22px;
+}
+main .E .list .item div strong span {
+    color: #ff0000;
+    margin-left: 10px;
+}
+footer {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+footer p {
+    margin: 25px 0 10px;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li:nth-child(4) {
+    color: #ff0000;
+}
+footer ul li span {
+    margin: 0 10px;
+}
+footer ul p {
+    font-size: 14px;
+    margin-top: 50px;
+}

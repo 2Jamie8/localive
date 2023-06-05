@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* 웹폰트 연결 */
+* {
+    margin: 0; padding: 0;
+}
+li {
+   list-style: none; 
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.item figure {
+    width: 342px; height: 420px;
+    border-radius: 10px;
+    overflow: hidden;/* 벗어난 자식들 숨김처리 */
+    /* <p>태그가 안보이게 됨 */
+    position: relative;
+}
+.item figure p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px; height: 30px;
+    background-color: #068e81;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 10px 0;
+    text-align: center;
+    line-height: 30px;
+}
+.item div ul li{
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 25px 0 20px 0;
+}
+.item div strong {
+    font-size: 22px;
+}
+.item div strong span {
+    font-size: 16px;
+    color: #797979;
+    margin-left: 20px;
+    text-decoration: line-through;/* 취소선 */
+}
